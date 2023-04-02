@@ -1,15 +1,8 @@
 <%- include('partials/_header') -%>
-<!--
 
-TemplateMo 552 Video Catalog
-
-https://templatemo.com/tm-552-video-catalog
-
--->
 <body>
 	<div class="tm-page-wrap mx-auto">
 		<div class="position-relative">
-
 
             <%- include('partials/_navigation') -%>
 
@@ -28,32 +21,31 @@ https://templatemo.com/tm-552-video-catalog
 		<main>
 			<div class="container-fluid px-0">
 				<div class="mx-auto tm-content-container">					
-					<div class="row mt-3 pb-3">
+					<div class="row mt-3pb-3">
 						<div class="col-12">
 							<div class="mx-auto tm-about-text-container px-3">
 								<h2 class="tm-page-title mb-4 tm-text-primary">Add New Photo</h2>
-                                <p class="mb-4">
+                                <p>
                                     Integer sit amet odio id libero tincidunt dignissim in eget arcu. Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. You are <u>not allowed</u> to re-distribute the template ZIP file on any template collection website.
                                 </p>
-                                <p class="mb-4">Video Catalog is a free website template for your business. This is 100% free Bootstrap v4.4.1 layout. You can modify and adapt this template for your CMS websites. You can use it for commercial or non-commercial work. If you wish to suport <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-primary">TemplateMo</a>, please contact us.</p>
 							</div>							
 						</div>						
 					</div>
-                    <div class="mx-auto pb-3 tm-about-text-container px-3">
+                    <div class="mx-auto pb-3 tm-about-text-container">
                         <div class="row">
-                            <div class="offset-1 col-lg-10 mb-5">
-                                <form id="contact-form" action="/photos" method="POST" encType="multipart/form-data" class="tm-contact-form">
+                            <div class="col-lg-12 mb-5">
+                                <form method="POST" action="/photos" class="tm-contact-form" encType="multipart/form-data">
                                   <div class="form-group">
                                     <input type="text" name="title" class="form-control rounded-0" placeholder="Photo Title" required>
                                   </div>
-                                 
+
                                   <div class="form-group">
                                     <textarea rows="8" name="description" class="form-control rounded-0" placeholder="Photo Description"
                                               required></textarea>
                                   </div>
 
-                                  <div class="form-group">
-                                    <input type="file" name="image" class="form-control rounded-0">
+                                  <div class="from-group">
+                                    <input type="file" name="image" class="form-control-file rounded-0">
                                   </div>
 
                                   <div class="form-group mb-0">
@@ -61,19 +53,17 @@ https://templatemo.com/tm-552-video-catalog
                                   </div>
                                 </form>    
                             </div>
-                            
+
                         </div>  
                     </div>                                      			
 				</div>
 
-			
 			</div>
 		</main>
 
 		<div class="container-fluid tm-content-container mx-auto pt-4">
-            
-			<%- include('partials/_footer') -%>
 
+            <%- include('partials/_footer') -%>
     <script src="js/parallax.min.js"></script>    
 </body>
 </html>
